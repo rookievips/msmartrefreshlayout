@@ -3,7 +3,6 @@ package com.rookievips.msmartrefreshlayout.smart
 import android.content.Context
 import android.util.AttributeSet
 import android.view.ViewGroup
-import androidx.databinding.BindingAdapter
 import com.rookievips.msmartrefreshlayout.R
 import com.rookievips.msmartrefreshlayout.header.MGifHeaderView
 import com.rookievips.msmartrefreshlayout.header.MHeaderView
@@ -11,7 +10,6 @@ import com.rookievips.msmartrefreshlayout.utils.SizeUtil
 import com.scwang.smart.refresh.header.ClassicsHeader
 import com.scwang.smart.refresh.header.MaterialHeader
 import com.scwang.smart.refresh.layout.SmartRefreshLayout
-import com.scwang.smart.refresh.layout.listener.OnRefreshListener
 import com.scwang.smart.refresh.layout.simple.SimpleComponent
 
 object MSmartRefreshConfig {
@@ -78,17 +76,6 @@ class MSmartRefreshLayout @JvmOverloads constructor(
     private var gifRes: Int
     private var gifWidth: Int
     private var gifHeight: Int
-
-    companion object {
-        @JvmStatic
-        @BindingAdapter(value = ["onRefreshListener"], requireAll = true)
-        fun setOnRefreshListener(
-            view: MSmartRefreshLayout,
-            listener: OnRefreshListener
-        ) {
-            view.setOnRefreshListener(listener)
-        }
-    }
 
     init {
         val ta = context.obtainStyledAttributes(attrs, R.styleable.MSmartRefreshLayout)
