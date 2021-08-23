@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MSmartRefreshLayout">
+        <attr name="lottieFile" format="string" />
+        <attr name="lottieWidth" format="dimension" />
+        <attr name="lottieHeight" format="dimension" />
+        <attr name="enableTips" format="boolean" />
+        <attr name="tipsSize" format="dimension" />
+        <attr name="enableVibrate" format="boolean" />
+        <attr name="enableOverScrollBounce" format="boolean" />
+        <attr name="refreshStyle">
+            <enum name="defaultStyle" value="0" />
+            <enum name="materialStyle" value="1" />
+            <enum name="classicStyle" value="2" />
+            <enum name="gifStyle" value="3" />
+        </attr>
+        <attr name="materialSchemeColor" format="reference" />
+        <attr name="gif" format="reference" />
+        <attr name="gifWidth" format="dimension" />
+        <attr name="gifHeight" format="dimension" />
+    </declare-styleable>
+</resources>
